@@ -23,4 +23,3 @@ cd todolist/
 ```
 
 and then you must install npm packages: `npm install` and you can run: `npm start` as well.
-# skuberg-todoList
