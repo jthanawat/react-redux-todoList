@@ -1,0 +1,29 @@
+{
+  "tasks": [
+    {
+      "text": "Swimming",
+      "checked": false,
+      "id": 2
+    },
+    {
+      "text": "Have lunch",
+      "checked": false,
+      "id": 3
+    },
+    {
+      "text": "Take a course",
+      "checked": true,
+      "id": 4
+    },
+    {
+      "text": "Keep a room",
+      "checked": true,
+      "id": 5
+    },
+    {
+      "text": "Play ROV",
+      "checked": true,
+      "id": 6
+    }
+  ]
+}
