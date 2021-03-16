@@ -16,7 +16,7 @@ import { Button } from '../../globalStyes';
 
 const Task = ({ task, index }) => {
   const dispatch = useDispatch();
-  const tasks = useSelector((state) => state.tasks.tasks);
+  const { tasks } = useSelector((state) => state.tasks);
 
   const handleEditTask = async (index, id) => {
     const updatedTask = { ...tasks[index] };

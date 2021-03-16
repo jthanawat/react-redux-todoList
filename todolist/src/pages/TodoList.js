@@ -6,7 +6,7 @@ import { Header, AddTask, Task } from '../components';
 import { Container } from '../globalStyes';
 
 const TodoList = () => {
-  const tasks = useSelector((state) => state.tasks);
+  const { tasks } = useSelector((state) => state.tasks);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -18,9 +18,8 @@ const TodoList = () => {
       <Header />
       <AddTask />
       {tasks &&
-        tasks.tasks &&
-        tasks.tasks.length > 0 &&
-        tasks.tasks
+        tasks.length > 0 &&
+        tasks
           .sort((a, b) => a.checked - b.checked)
           .map((task, index) => (
             <Task key={task.id} task={task} index={index} />
