@@ -71,8 +71,8 @@ const Task = ({ task, index }) => {
     <>
       <TasksContainer>
         <TaskWrapper>
-          <TaskItem>
-            <TaskList>
+          <TaskItem $checked={task.checked}>
+            <TaskList $checked={task.checked}>
               <InputChecked
                 type="checkbox"
                 $checked={task.checked}

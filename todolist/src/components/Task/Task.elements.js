@@ -25,6 +25,7 @@ export const TaskItem = styled.li`
   white-space: wrap;
   word-break: break-all;
   width: 600px;
+  opacity: ${({ $checked }) => ($checked ? '0.4' : '1.0')};
 
   @media screen and (max-width: 768px) {
     width: 450px;
@@ -40,7 +41,9 @@ export const InputChecked = styled.input`
   margin-right: 10px;
 `;
 
-export const TaskList = styled.div``;
+export const TaskList = styled.div`
+  text-decoration: ${({ $checked }) => ($checked ? 'line-through' : 'none')};
+`;
 
 export const ActionWrapper = styled.div`
   display: flex;
