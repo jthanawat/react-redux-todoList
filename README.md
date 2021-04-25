@@ -1,5 +1,3 @@
-# skuberg-todoList
-
 ## Getting Started with This Project
 
 1. Clone the repo
